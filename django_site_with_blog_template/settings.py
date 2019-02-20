@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,6 +31,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'app_business_card',
+    'app_business_card_blog',
+    'ckeditor',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,7 +78,7 @@ WSGI_APPLICATION = 'django_site_with_blog_template.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blog_site',
+        'NAME': 'blog_site_two',
         'USER': 'root',
         'PASSWORD': 'ltvmzyjd90',
         'HOST': 'localhost',
