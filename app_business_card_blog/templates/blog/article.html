@@ -1,7 +1,11 @@
 {% extends 'app_business_card/layout.html' %}
 {% load static %}
 {% block content %}
-    <h1>Article page</h1>
-    <a href="contacts">contacts</a>
-    <a href="about-us">about us</a>
+    <article>
+        <h1>{{ article.title }}</h1>
+        <div>{{ article.content|safe }}</div>
+    </article>
+    <a href="/blog">Назад</a>
+    <a href="/contacts">contacts</a>
+    <a href="/about-us">about us</a>
 {% endblock %}

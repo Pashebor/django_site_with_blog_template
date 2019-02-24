@@ -3,15 +3,14 @@
 {% block content %}
     <h1>Blog page</h1>
     <main>
-    {% for post in  posts%}
+    {% for article in  articles %}
             <article class="cases__item col-md-3 border offset-1 mb-3">
-                <h4 class="h4">{{ post.title }}</h4>
-                <img class="img-thumbnail" src="{% static '/private/' %}{{ post.image }}"/>
-                <h5 class="h5 text-center">{{ post.preview_text | truncatechars:20 }}</h5>
-                <a href="/post/{{ psot.id }}" class="btn btn-info mb-2 offset-3">подробнее</a>
+                <h4 class="h4">{{ article.title }}</h4>
+                <h5 class="h5 text-center">{{ article.preview_text | truncatechars:20 }}</h5>
+                <a href="/blog/{{ article.slug }}" class="btn btn-info mb-2 offset-3">подробнее</a>
             </article>
         {% endfor %}
     </main>
-    <a href="contacts">contacts</a>
-    <a href="about-us">about us</a>
+    <a href="/contacts">contacts</a>
+    <a href="/about-us">about us</a>
 {% endblock %}
