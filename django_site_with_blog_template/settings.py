@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'filebrowser',
     'grappelli',
+    'meta',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'django_site_with_blog_template.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'blog_site_two',
+        'NAME': 'mydatabase',
         'USER': 'root',
         'PASSWORD': 'ltvmzyjd90',
         'HOST': 'localhost',

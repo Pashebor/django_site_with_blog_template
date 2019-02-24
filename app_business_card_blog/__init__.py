@@ -1,0 +1,1 @@
+default_app_config = 'app_business_card_blog.apps.AppBusinessCardBlogConfig'

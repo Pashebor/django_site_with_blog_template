@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import MainPage, AboutUsPage, ContatcsPage
 
-# Register your models here.
+admin.site.register(MainPage)
+admin.site.register(AboutUsPage)
+admin.site.register(ContatcsPage)

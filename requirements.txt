@@ -4,3 +4,4 @@ django-filebrowser==3.10.1
 django-grappelli==2.11.1
 Pillow==5.2.0
 transliterate==1.10.2
+django-meta==1.4.1
