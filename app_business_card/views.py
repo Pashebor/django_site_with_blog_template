@@ -1,14 +1,22 @@
 from django.shortcuts import render
-from .models import MainPage
+from .models import MainPage, ContatcsPage, AboutUsPage
+
+
+def render_page(request, page_name='main_page', page_model: object=MainPage):
+    page_meta = page_model.objects.latest('id')
+    context = {
+        'meta': page_meta
+    }
+    return render(request, 'app_business_card/pages/%s/index.html' % page_name, context)
+
 
 def main_page(request):
-    page = MainPage.objects.latest('id')
-    return render(request, 'app_business_card/pages/main_page/index.html')
+    return render_page(request)
 
 
 def contacts(request):
-    return render(request, 'app_business_card/pages/contacts/index.html')
+    return render_page(request, 'contacts', ContatcsPage)
 
 
 def about_us(request):
-    return render(request, 'app_business_card/pages/about_us/index.html')
+    return render_page(request, 'about_us', AboutUsPage)

@@ -16,6 +16,8 @@ class MainPage(models.Model, ModelMeta):
 
 class ContatcsPage(models.Model):
     title = models.CharField(max_length=200, verbose_name='Заголовок страницы \"Контакты\"')
+    description = models.CharField(max_length=255, verbose_name='Description meta')
+    keywords = models.CharField(max_length=255, verbose_name='Keywords meta')
 
     def __str__(self):
         return self.title
@@ -26,6 +28,8 @@ class ContatcsPage(models.Model):
 
 class AboutUsPage(models.Model):
     title = models.CharField(max_length=200, verbose_name='Заголовок страницы \"О нас\"')
+    description = models.CharField(max_length=255, verbose_name='Description meta')
+    keywords = models.CharField(max_length=255, verbose_name='Keywords meta')
 
     def __str__(self):
         return self.title

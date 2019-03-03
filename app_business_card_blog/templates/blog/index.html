@@ -6,6 +6,7 @@
     {% for article in  articles %}
             <article class="cases__item col-md-3 border offset-1 mb-3">
                 <h4 class="h4">{{ article.title }}</h4>
+                <img src="/media/{{ article.preview_image }}" alt="">
                 <h5 class="h5 text-center">{{ article.preview_text | truncatechars:20 }}</h5>
                 <a href="/blog/{{ article.slug }}" class="btn btn-info mb-2 offset-3">подробнее</a>
             </article>
