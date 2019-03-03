@@ -1,0 +1,25 @@
+{
+  "name": "django_site_with_blog_template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Pashebor/django_site_with_blog_template.git",
+  "author": "pashebor",
+  "license": "MIT",
+  "scripts": {
+    "babel": "babel --presets es2015 js/main.js -o build/main.bundle.js",
+    "start": "http-server",
+    "webpack": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^4.29.6"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.2.3"
+  }
+}
