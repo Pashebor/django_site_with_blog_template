@@ -12,4 +12,4 @@ urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
     path('', include('app_business_card.urls')),
     path('blog/', include('app_business_card_blog.urls'))
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.MEDIA_URL)

@@ -1,8 +1,15 @@
 {% extends 'app_business_card/layout.html' %}
 {% load static %}
 {% block content %}
-    <h1>Main page</h1>
-    <a href="contacts">contacts</a>
-    <a href="about-us">about us</a>
-    <a href="blog">blog</a>
+    <main class="main-page">
+        <h1 class="main-page__title">Main page</h1>
+        <section>
+            <p class="main-page-text">
+                lorem ipsum text some names and other
+            </p>
+        </section>
+        <a class="main-page__link" href="contacts">contacts</a>
+        <a class="main-page__link" href="about-us">about us</a>
+        <a class="main-page__link" href="blog">blog</a>
+    </main>
 {% endblock %}

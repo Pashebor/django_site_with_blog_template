@@ -1,0 +1,25 @@
+@import 'normalize';
+@include normalize();
+
+.main-page {
+  width: 600px;
+  margin: auto;
+
+  text-align: center;
+
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  .main-page-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: purple;
+  }
+}

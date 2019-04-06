@@ -6,7 +6,8 @@ def render_page(request, page_name='main', page_model: object=MainPage):
     page_meta = page_model.objects.latest('id')
     context = {
         'meta': page_meta,
-        'js': '/frontend/js/%s.bundle.js' % page_name
+        'js': '/frontend/js/%s.bundle.js' % page_name,
+        'css': '/frontend/css/%s.css' % page_name
     }
     return render(request, 'app_business_card/pages/%s/index.html' % page_name, context)
 
